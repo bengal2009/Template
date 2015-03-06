@@ -292,7 +292,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdIMP" value="//Under setting.graddle&#10;include ':app'&#10;include ':Benlib'&#10;project(':Benlib').projectDir = new java.io.File(settingsDir, '../BenLib/benlib')" description="Import Library Project" toReformat="true" toShortenFQNames="true">
+  <template name="bdimp" value="//Under setting.graddle&#10;include ':app'&#10;include ':Benlib'&#10;project(':Benlib').projectDir = new java.io.File(settingsDir, '../BenLib/benlib')" description="Import Library Project" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
