@@ -88,28 +88,6 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdgst" value="gestureDetector = new android.view.GestureDetector(new android.view.GestureDetector.OnGestureListener() {&#10;&#10;            @java.lang.Override&#10;            public boolean onSingleTapUp(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onShowPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onScroll(android.view.MotionEvent e1, android.view.MotionEvent e2, float distanceX,&#10;                                    float distanceY) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onLongPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onFling(android.view.MotionEvent e1, android.view.MotionEvent e2, float velocityX,&#10;                                   float velocityY) {&#10;                if(velocityX&gt;0){&#10;//                    viewFlipper.showNext();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;1111&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }else {&#10;//                    viewFlipper.showPrevious();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;222&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onDown(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;        });" description="Gesture" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
   <template name="bddeb" value="android.util.Log.d(&quot;111&quot;, &quot;onDoubleTap: &quot; + event.toString());" description="Debug Output" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -249,6 +227,50 @@
     </context>
   </template>
   <template name="bdcustadp" value="public class CustListAdp extends android.widget.BaseAdapter {&#10;    private java.util.ArrayList&lt;com.example.blin.bennytest.PersonItem&gt; listData;&#10;    private android.view.LayoutInflater layoutInflater;&#10;    public CustListAdp(android.content.Context context, java.util.ArrayList&lt;com.example.blin.bennytest.PersonItem&gt; listData) {&#10;        this.listData = listData;&#10;        layoutInflater = android.view.LayoutInflater.from(context);&#10;    }&#10;    public android.view.View getView(int position, android.view.View convertView, android.view.ViewGroup parent) {&#10;        return convertView;&#10;    }&#10;&#10;    @java.lang.Override&#10;    public int getCount() {&#10;        return listData.size();&#10;    }&#10;&#10;    @java.lang.Override&#10;    public java.lang.Object getItem(int position) {&#10;        return listData.get(position);&#10;    }&#10;&#10;    @java.lang.Override&#10;    public long getItemId(int position) {&#10;        return position;&#10;    }&#10;}" description="Customer Adapter" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdsp" value="SP=getApplicationContext().getSharedPreferences(&quot;MyPref&quot;, 0);&#10;        android.content.SharedPreferences.Editor SP_Edit = SP.edit();&#10;        if(SP==null) {&#10;&#10;            SP_Edit.putString(&quot;Name&quot;, &quot;Benny&quot;);&#10;            SP_Edit.putString(&quot;Addr&quot;, &quot;Pudong&quot;);&#10;            SP_Edit.commit();&#10;            android.util.Log.i(&quot;MainActivity&quot;,&quot;SP Create!&quot;);&#10;        }&#10;        else {&#10;&#10;            android.util.Log.i(&quot;MainActivity&quot;,&quot;SP Read!&quot;+&quot;Name&quot;+SP.getString(&quot;Name&quot;,&quot;&quot;));&#10;        }" description="Share Prefence" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdgst" value="public boolean onTouchEvent(android.view.MotionEvent event) {&#10;        gestureDetector.onTouchEvent(event);&#10;        return super.onTouchEvent(event);&#10;    }&#10;    public void  InitGesture(){&#10;        gestureDetector = new android.view.GestureDetector(new android.view.GestureDetector.OnGestureListener() {&#10;&#10;            @java.lang.Override&#10;            public boolean onSingleTapUp(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onShowPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onScroll(android.view.MotionEvent e1, android.view.MotionEvent e2, float distanceX,&#10;                                    float distanceY) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onLongPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onFling(android.view.MotionEvent e1, android.view.MotionEvent e2, float velocityX,&#10;                                   float velocityY) {&#10;                if(velocityX&gt;0){&#10;                   // viewFlipper.showNext();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;Right&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }else {&#10;                    //viewFlipper.showPrevious();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;Left&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onDown(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;        });&#10;    }&#10;" description="Gesture" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
