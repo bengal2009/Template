@@ -1,6 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <templateSet group="user">
-  <template name="bd1" value="&lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;&#10;    &lt;uses-permission android:name=&quot;android.permission.READ_EXTERNAL_STORAGE&quot; /&gt;" description="SD Card Permission" toReformat="true" toShortenFQNames="true">
+  <template name="bdalt" value="new android.app.AlertDialog.Builder(this).setTitle(&quot;请输入&quot;).setIcon(&#10;                 android.R.drawable.ic_dialog_info).setView(&#10;                InputStr).setPositiveButton(&quot;确定&quot;,)&#10;                 .setNegativeButton(&quot;取消&quot;, null).show();" description="AlertDialog" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdt" value="android.widget.Button  buttonClick = (android.widget.Button)findViewById(com.example.blin.myapplication.R.id.BT3);&#10;        buttonClick.setOnClickListener(new android.view.View.OnClickListener() {&#10;            @java.lang.Override&#10;            public void onClick(android.view.View view) {&#10;                dialog();&#10;            }&#10;&#10;        });" description="Button Setup" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdtst" value="android.widget.Toast.makeText(getApplicationContext(), &quot;Click! &quot;,&#10;                android.widget.Toast.LENGTH_SHORT).show();" description="Toast" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdcolor" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&#10;&lt;resources&gt;&#10;    &lt;color name=&quot;text_color_default&quot;&gt;#00000C&lt;/color&gt;&#10;    &lt;color name=&quot;text_color_inverse&quot;&gt;#FFFFFF&lt;/color&gt;&#10;    &lt;color name=&quot;white&quot;&gt;#FFFFFF&lt;/color&gt;&#10;    &lt;color name=&quot;list_row_default_bg&quot;&gt;#ffffff&lt;/color&gt;&#10;    &lt;color name=&quot;list_row_pressed_bg&quot;&gt;#008cef&lt;/color&gt;&#10;    &lt;color name=&quot;list_row_selected_bg&quot;&gt;#86d3f6&lt;/color&gt;&#10;&lt;/resources&gt;" description="Color Styles" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -22,7 +88,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdwaitdlg" value="private ProgressDialog simpleWaitDialog;&#10;simpleWaitDialog = android.app.ProgressDialog.show(com.javatechig.droid.ImageDownladerActivity.this,&quot;Wait&quot;, &quot;Downloading Image&quot;);" description="Wait Dialog" toReformat="true" toShortenFQNames="true">
+  <template name="bdtextstyle" value="&lt;style name=&quot;MyTextViewStyle&quot;&gt;&#10;    &lt;item name=&quot;android:layout_width&quot;&gt;fill_parent&lt;/item&gt;&#10;    &lt;item name=&quot;android:layout_height&quot;&gt;wrap_content&lt;/item&gt;&#10;    &lt;item name=&quot;android:textColor&quot;&gt;#006633&lt;/item&gt;&#10;    &lt;item name=&quot;android:typeface&quot;&gt;monospace&lt;/item&gt;&#10;    &lt;item name=&quot;android:background&quot;&gt;#f0f0f0&lt;/item&gt;&#10;    &lt;item name=&quot;android:textStyle&quot;&gt;italic&lt;/item&gt;&#10;    &lt;item name=&quot;android:padding&quot;&gt;5dp&lt;/item&gt;    &#10;&lt;/style&gt;" description="Text Style" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="bdcuslist" value="private static class CustomListAdapter extends android.widget.BaseAdapter {&#10;        private java.util.ArrayList&lt;com.example.lin.android3.MainList.NewsItem&gt; listData;&#10;        private android.view.LayoutInflater layoutInflater;&#10;        public CustomListAdapter(android.content.Context context, java.util.ArrayList&lt;com.example.lin.android3.MainList.NewsItem&gt; listData) {&#10;            this.listData = listData;&#10;            layoutInflater = android.view.LayoutInflater.from(context);&#10;&#10;        }&#10;        @java.lang.Override&#10;        public int getCount() {&#10;            return listData.size();&#10;        }&#10;        @java.lang.Override&#10;        public java.lang.Object getItem(int position) {&#10;            return listData.get(position);&#10;        }&#10;&#10;        @java.lang.Override&#10;        public long getItemId(int position) {&#10;            return position;&#10;        }&#10;        public android.view.View getView(int position, android.view.View convertView, android.view.ViewGroup parent) {&#10;            com.example.lin.android3.MainList.CustomListAdapter.ViewHolder holder;&#10;            if (convertView == null) {&#10;                convertView = layoutInflater.inflate(com.example.lin.android3.R.layout.custlist, null);&#10;                holder = new com.example.lin.android3.MainList.CustomListAdapter.ViewHolder();&#10;                holder.TitleView = (android.widget.TextView) convertView.findViewById(com.example.lin.android3.R.id.Title1);&#10;                holder.AddrView = (android.widget.TextView) convertView.findViewById(com.example.lin.android3.R.id.addr);&#10;                convertView.setTag(holder);&#10;            } else {&#10;                holder = (com.example.lin.android3.MainList.CustomListAdapter.ViewHolder) convertView.getTag();&#10;            }&#10;&#10;            holder.TitleView.setText(listData.get(position).getTitle());&#10;            holder.AddrView.setText(&quot;By, &quot; + listData.get(position).getAddress());&#10;&#10;            return convertView;&#10;        }&#10;        static class ViewHolder {&#10;            android.widget.TextView TitleView;&#10;            android.widget.TextView AddrView;&#10;        }&#10;&#10;    }&#10;&#10; private static class NewsItem {&#10;        private java.lang.String Title;&#10;        private java.lang.String Address;&#10;        public java.lang.String getTitle(){&#10;            return Title;&#10;        }&#10;        public java.lang.String getAddress(){&#10;            return Address;&#10;        }&#10;&#10;        public void setTitle(java.lang.String title  )&#10;        {&#10;            this.Title=title;&#10;        }&#10;        public void setAddress(java.lang.String address)&#10;        {&#10;            this.Address=address;&#10;        }&#10;        @java.lang.Override&#10;        public java.lang.String toString(){&#10;            return Title+&quot;:&quot;+Address;&#10;        }&#10;    }" description="CustomList" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -30,9 +99,9 @@
       <option name="XML" value="false" />
       <option name="XML_TEXT" value="false" />
       <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
       <option name="COMPLETION" value="false" />
@@ -44,98 +113,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdtst" value="android.widget.Toast.makeText(getApplicationContext(), name,&#10;                android.widget.Toast.LENGTH_SHORT).show();" description="toast" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdint" value="android.content.Intent GoVW = new android.content.Intent(com.example.lin.myapplication.WebVW.this,com.example.lin.myapplication.MainActivity.class);&#10;            startActivity(GoVW);" description="Intent" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bddeb" value="android.util.Log.d(&quot;111&quot;, &quot;onDoubleTap: &quot; + event.toString());" description="Debug Output" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdfind" value="$B$ $A$=($B$) findViewById(R.id.$C$);&#10;$END$" description="Find View" toReformat="true" toShortenFQNames="true">
-    <variable name="B" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="C" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdarr" value="final ArrayAdapter&lt;java.lang.String&gt; adapter = new android.widget.ArrayAdapter&lt;java.lang.String&gt;(this,android.R.layout.simple_list_item_1, $A$);&#10;        $A$.setAdapter(adapter);&#10;$END$" description="Array Adapter" toReformat="true" toShortenFQNames="true">
+  <template name="bdcustlist-1" value="//        Start&#10;        java.util.ArrayList&lt;com.example.lin.android3.MainList.NewsItem&gt; image_details = getListData();&#10;        final android.widget.ListView lv1 = (android.widget.ListView) findViewById(com.example.lin.android3.R.id.$A$);&#10;        lv1.setAdapter(new com.example.lin.android3.MainList.CustomListAdapter(this, image_details));&#10;        lv1.setOnItemClickListener(new android.widget.AdapterView.OnItemClickListener() {&#10;&#10;            public void onItemClick(android.widget.AdapterView&lt;?&gt; a, android.view.View v, int position, long id) {&#10;                java.lang.Object o = lv1.getItemAtPosition(position);&#10;                com.example.lin.android3.MainList.NewsItem newsData = (com.example.lin.android3.MainList.NewsItem) o;&#10;                android.widget.Toast.makeText(com.example.lin.android3.MainList.this, &quot;Selected :&quot; + &quot; &quot; + newsData, android.widget.Toast.LENGTH_LONG).show();&#10;            }&#10;&#10;        });&#10;private ArrayList&lt;NewsItem&gt; getListData() {&#10;    ArrayList&lt;NewsItem&gt; results = new ArrayList&lt;NewsItem&gt;();&#10;    NewsItem newsData = new NewsItem();&#10;    newsData.setTitle(&quot;Dance of Democracy&quot;);&#10;    newsData.setAddress(&quot;Pankaj Gupta&quot;);&#10;    results.add(newsData);&#10;    return results;&#10;}" description="CustomList-1 Main" toReformat="true" toShortenFQNames="true">
     <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -158,8 +136,30 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdfra" value="if (savedInstanceState == null) {&#10;    $A$ = new com.example.blin.bennytest.ThirdFragment();&#10;    getSupportFragmentManager().beginTransaction()&#10;            .replace(com.example.blin.bennytest.R.id.$B$, $A$, &quot;Third&quot;)&#10;            .commit();&#10;}" description="Fragment Switch" toReformat="true" toShortenFQNames="true">
-    <variable name="A" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="bdfd" value="public static final java.lang.String KEY_HEADLINE=&quot;news_headline&quot;;" description="Final Declare" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="XML_TEXT" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="bdbut" value="android.widget.Button $A$ = (android.widget.Button) findViewById(R.id.$B$);&#10;$A$.setOnClickListener(new android.view.View.OnClickListener() {&#10;                @java.lang.Override&#10;                public void onClick(android.view.View view) {&#10;                    //addNotification();&#10;                }//Onclick Finish&#10;&#10;&#10;            });" description="Button" toReformat="true" toShortenFQNames="true">
+    <variable name="A" expression="" defaultValue="A1" alwaysStopAt="true" />
     <variable name="B" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="HTML_TEXT" value="false" />
@@ -182,7 +182,7 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdbut" value="android.widget.Button A1 = (android.widget.Button) view.findViewById(com.example.blin.bennytest.R.id.button1);&#10;        A1.setOnClickListener(new android.view.View.OnClickListener() {&#10;            @java.lang.Override&#10;            public void onClick(android.view.View view) {&#10;            }//Onclick Finish&#10;&#10;&#10;        });" description="Button Declare" toReformat="true" toShortenFQNames="true">
+  <template name="bdshut" value="try {&#10;                        java.lang.Process proc = java.lang.Runtime.getRuntime()&#10;                                .exec(new java.lang.String[]{ &quot;su&quot;, &quot;-c&quot;, &quot;reboot -p&quot; });&#10;                        proc.waitFor();&#10;                    } catch (java.lang.Exception ex) { &#10;                        ex.printStackTrace();&#10;                    }" description="Shutdown Machine" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -204,7 +204,10 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bditr" value="java.lang.String[] mTestArray;&#10;        mTestArray=getResources().getStringArray(com.example.blin.bennytest.R.array.TestStringArray);" description="Item Array to String Array" toReformat="true" toShortenFQNames="true">
+  <template name="bdmnu" value=" // public boolean onCreateOptionsMenu(Menu menu) {  &#10; MenuItemCompat.setShowAsAction(  &#10;&#10;                menu  &#10;&#10;                .add(&quot;No.1&quot;)  &#10;&#10;                .setIcon(android.R.drawable.ic_menu_rotate),   &#10;&#10;                MenuItemCompat.SHOW_AS_ACTION_IF_ROOM);  " description="Menu Setup" toReformat="false" toShortenFQNames="true">
+    <context />
+  </template>
+  <template name="bdprog" value="progressDialog = android.app.ProgressDialog.show(com.javatechig.handlerexample.MainActivity.this,&#10;        &#9;&#9;&#9;&#9;&quot;&quot;, &quot;Loading..&quot;);" description="Progress Dialogue" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
@@ -226,126 +229,16 @@
       <option name="OTHER" value="false" />
     </context>
   </template>
-  <template name="bdcustadp" value="public class CustListAdp extends android.widget.BaseAdapter {&#10;    private java.util.ArrayList&lt;com.example.blin.bennytest.PersonItem&gt; listData;&#10;    private android.view.LayoutInflater layoutInflater;&#10;    public CustListAdp(android.content.Context context, java.util.ArrayList&lt;com.example.blin.bennytest.PersonItem&gt; listData) {&#10;        this.listData = listData;&#10;        layoutInflater = android.view.LayoutInflater.from(context);&#10;    }&#10;    public android.view.View getView(int position, android.view.View convertView, android.view.ViewGroup parent) {&#10;        return convertView;&#10;    }&#10;&#10;    @java.lang.Override&#10;    public int getCount() {&#10;        return listData.size();&#10;    }&#10;&#10;    @java.lang.Override&#10;    public java.lang.Object getItem(int position) {&#10;        return listData.get(position);&#10;    }&#10;&#10;    @java.lang.Override&#10;    public long getItemId(int position) {&#10;        return position;&#10;    }&#10;}" description="Customer Adapter" toReformat="true" toShortenFQNames="true">
+  <template name="bdfooter" value="&lt; include&#10;    android:id=&quot;@+id/footerView&quot;&#10;    android:layout_width=&quot;fill_parent&quot;&#10;    android:layout_height=&quot;wrap_content&quot;&#10;    android:layout_alignParentBottom=&quot;true&quot;&#10;    layout=&quot;@layout/footer&quot; /&gt;" description="Footer Example" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="false" />
       <option name="HTML" value="false" />
       <option name="XSL_TEXT" value="false" />
       <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
+      <option name="XML_TEXT" value="true" />
       <option name="JAVA_CODE" value="false" />
       <option name="JAVA_STATEMENT" value="false" />
       <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdsp" value="SP=getApplicationContext().getSharedPreferences(&quot;MyPref&quot;, 0);&#10;        android.content.SharedPreferences.Editor SP_Edit = SP.edit();&#10;        if(SP==null) {&#10;&#10;            SP_Edit.putString(&quot;Name&quot;, &quot;Benny&quot;);&#10;            SP_Edit.putString(&quot;Addr&quot;, &quot;Pudong&quot;);&#10;            SP_Edit.commit();&#10;            android.util.Log.i(&quot;MainActivity&quot;,&quot;SP Create!&quot;);&#10;        }&#10;        else {&#10;&#10;            android.util.Log.i(&quot;MainActivity&quot;,&quot;SP Read!&quot;+&quot;Name&quot;+SP.getString(&quot;Name&quot;,&quot;&quot;));&#10;        }" description="Share Prefence" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdgst" value="public boolean onTouchEvent(android.view.MotionEvent event) {&#10;        gestureDetector.onTouchEvent(event);&#10;        return super.onTouchEvent(event);&#10;    }&#10;    public void  InitGesture(){&#10;        gestureDetector = new android.view.GestureDetector(new android.view.GestureDetector.OnGestureListener() {&#10;&#10;            @java.lang.Override&#10;            public boolean onSingleTapUp(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onShowPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onScroll(android.view.MotionEvent e1, android.view.MotionEvent e2, float distanceX,&#10;                                    float distanceY) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public void onLongPress(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onFling(android.view.MotionEvent e1, android.view.MotionEvent e2, float velocityX,&#10;                                   float velocityY) {&#10;                if(velocityX&gt;0){&#10;                   // viewFlipper.showNext();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;Right&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }else {&#10;                    //viewFlipper.showPrevious();&#10;                    android.widget.Toast.makeText(getApplicationContext(), &quot;Left&quot;,&#10;                            android.widget.Toast.LENGTH_SHORT).show();&#10;                }&#10;                return false;&#10;            }&#10;&#10;            @java.lang.Override&#10;            public boolean onDown(android.view.MotionEvent e) {&#10;                // TODO Auto-generated method stub&#10;                return false;&#10;            }&#10;        });&#10;    }&#10;" description="Gesture" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdimp" value="//Under setting.graddle&#10;include ':app'&#10;include ':Benlib'&#10;project(':Benlib').projectDir = new java.io.File(settingsDir, '../BenLib/benlib')" description="Import Library Project" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="false" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="true" />
-      <option name="GROOVY_STATEMENT" value="true" />
-      <option name="GROOVY_DECLARATION" value="true" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdtag" value="java.lang.String TAG=&quot;Second Activity&quot;;" description="Define TAG" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="false" />
-      <option name="JAVA_EXPRESSION" value="false" />
-      <option name="JAVA_DECLARATION" value="true" />
-      <option name="JAVA_COMMENT" value="false" />
-      <option name="JAVA_STRING" value="false" />
-      <option name="COMPLETION" value="false" />
-      <option name="GROOVY" value="false" />
-      <option name="GROOVY_EXPRESSION" value="false" />
-      <option name="GROOVY_STATEMENT" value="false" />
-      <option name="GROOVY_DECLARATION" value="false" />
-      <option name="MAVEN" value="false" />
-      <option name="OTHER" value="false" />
-    </context>
-  </template>
-  <template name="bdinf" value="android.view.LayoutInflater inflater = (android.view.LayoutInflater)   getSystemService(android.content.Context.LAYOUT_INFLATER_SERVICE);&#10;        view1 = inflater.inflate(com.example.blin.bennytest.R.layout.listfilelayout, null);&#10;" description="Inflte View" toReformat="true" toShortenFQNames="true">
-    <context>
-      <option name="HTML_TEXT" value="false" />
-      <option name="HTML" value="false" />
-      <option name="XSL_TEXT" value="false" />
-      <option name="XML" value="false" />
-      <option name="XML_TEXT" value="false" />
-      <option name="JAVA_CODE" value="false" />
-      <option name="JAVA_STATEMENT" value="true" />
-      <option name="JAVA_EXPRESSION" value="true" />
       <option name="JAVA_DECLARATION" value="false" />
       <option name="JAVA_COMMENT" value="false" />
       <option name="JAVA_STRING" value="false" />
